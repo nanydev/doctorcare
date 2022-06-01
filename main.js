@@ -38,10 +38,8 @@ function activaMenuAtCurrentSection(section) {
   const sectionId = section.getAttribute('id')
   const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
 
-  console.log(menuElement)
   menuElement.classList.remove('active')
   if (sectionBoundaries) {
-    console.log(menuElement)
     menuElement.classList.add('active')
   }
 }
@@ -49,10 +47,8 @@ function activaMenuAtCurrentSection(section) {
 function showNavOnScrow() {
   const navigation = document.querySelector('#navigation')
   if (scrollY > 0) {
-    console.log(navigation)
     navigation.classList.add('scroll')
   } else {
-    console.log(navigation)
     navigation.classList.remove('scroll')
   }
 }
